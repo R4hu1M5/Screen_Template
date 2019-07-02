@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Screen Template</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-fluid main-container">
+            <div class="row" style= "height: -webkit-fill-available;">
+                <!-- 70% part -->
+                <div class="col-md-8 col-profileImage">
+                    <div class="user-image">
+                        <button class = "camera-button">
+                          <img class = "camera-icon" id = "cameraicon"
+                            src="./images/cameraicon.png"/>
+                        </button>
+                        <video class="video-display" width=100 height=100 id="video" controls autoplay></video>
+                        <canvas class="canvas-display" id="myCanvas" width=800 height=800></canvas>
+                    </div>
+                </div>
+                <!-- 30% part -->
+                <div class="col-md-4">
+                    <div class="container">
+
+                        <div class="slideDiv">
+                        <article class="slide active">
+                            <img src="images/blackshirt.png"/>
+                            <img src="images/whiteshirt.png"/>
+                            <img src="images/bluecheckshirt.png"/>
+                            <img src="images/"/>
+                        </article>
+
+                            <article class="slide">
+                                <img src="images/blueshirt.png"/>
+                                <img src="images/bluetshirt.png"/>
+                                <img src="images/greentshirt.png"/>
+                                <img src="images/"/>
+                        </article>
+
+                            <article class="slide">
+                                <img src="images/blackshirt.png"/>
+                                <img src="images/whiteshirt.png"/>
+                                <img src="images/pink.png"/>
+                                <img src="images/"/>
+                        </article>
+
+                            <article class="slide">
+                                <img src="images/redcheckshirt.png"/>
+                                <img src="images/whiteshirt.png"/>
+                                <img src="images/yellowcheckshirt.png"/>
+                                <img src="images/"/>
+                        </article>
+                        </div>  <!-- /slideDiv -->
+
+                        <nav class="controls">
+                            <button class="button" type="button" aria-label="Go to first image"></button>
+                            <button class="button" type="button" aria-label="Go to second image"></button>
+                            <button class="button" type="button" aria-label="Go to third image"></button>
+                            <button class="button" type="button" aria-label="Go to fourth image"></button>
+                        </nav>
+
+                    </div>  <!-- /container -->
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
